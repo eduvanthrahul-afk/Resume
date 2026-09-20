@@ -47,17 +47,19 @@ body {
   width: 210mm;
   min-height: 297mm;
   margin: 24px auto;
-  padding: 15mm 16mm 14mm;
+  padding: 10mm 16mm 14mm;
   background: white;
   box-shadow: 0 5px 30px rgba(0,0,0,.10);
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  padding-bottom: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding-bottom: 12px;
   border-bottom: 2px solid #111827;
+  text-align: center;
 }
 
 h1 {
@@ -78,9 +80,9 @@ h1 {
 }
 
 .contact {
-  text-align: right;
+  text-align: center;
   font-size: 10.2px;
-  line-height: 1.75;
+  line-height: 1.45;
   color: #303640;
   white-space: nowrap;
 }
@@ -88,6 +90,11 @@ h1 {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.contact a {
+  text-decoration: underline;
+  text-underline-offset: 1px;
 }
 
 section {
@@ -110,8 +117,7 @@ section > p,
 
 .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 28px;
+  grid-template-columns: 1fr;
 }
 
 .project {
@@ -226,7 +232,7 @@ code {
     width: 210mm;
     min-height: 297mm;
     margin: 0;
-    padding: 15mm 16mm 14mm;
+    padding: 10mm 16mm 14mm;
     box-shadow: none;
   }
 
@@ -236,20 +242,20 @@ code {
 
   .header {
     display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    flex-wrap: nowrap !important;
-    gap: 25px;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 3px;
   }
 
   .contact {
-    text-align: right !important;
+    text-align: center !important;
     white-space: nowrap !important;
     flex-shrink: 0;
   }
 
   .skills {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr !important;
   }
 }
